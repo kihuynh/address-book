@@ -3,6 +3,10 @@ function Contact(first, last) {
   this.lastName = last;
 }
 
+Contact.prototype.fullName = function () {
+  return this.firstName + " " + this.lastName;
+}
+
 
 $(document).ready(function() {
   $("form#contacts").submit(function(event) {
@@ -13,7 +17,7 @@ $(document).ready(function() {
 
     var newContact = new Contact(inputFirst, inputLast);
 
-    $("ul#output").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
+    $("ul#output").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $("input#first").val("");
     $("input#last").val("");
