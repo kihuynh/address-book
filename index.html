@@ -9,19 +9,36 @@
   </head>
   <body>
     <div class="container">
-      <h2>Address Book</h2>
-      <form id="contacts">
-        <div class="form-group">
-          <label for="name">First Name:</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="name">Last Name:</label>
-          <input type="text" class="form-control">
-        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Address Book</h2>
+          <form id="contacts">
+            <div class="form-group">
+              <label for="name">First Name:</label>
+              <input id="first" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="name">Last Name:</label>
+              <input id="last" type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+          <div class="initial-contact">
+            <h3>Contacts:</h3>
+            <ul id="output">
 
-        <button type="submit" class="btn btn-primary">Add</button>
-      </form>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+          </div>
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
