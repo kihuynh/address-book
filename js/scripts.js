@@ -75,7 +75,7 @@ $(document).ready(function() {
     $("ul#output").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
 
-    $("#output").last().click(function() {
+    $("#output").children("li").last().click(function() {
       $(".show-contact").show();
       $(".show-contact h2").text(newContact.firstName);
       $(".first-name").text(newContact.firstName);

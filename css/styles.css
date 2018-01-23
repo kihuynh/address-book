@@ -7,6 +7,6 @@
   color: #0088cc;
 }
 
-#output:hover {
+li:hover {
   text-decoration: underline;
 }
